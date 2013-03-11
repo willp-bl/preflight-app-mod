@@ -84,7 +84,12 @@ public class Validator_A1b
         {
         	System.out.println("<preflight name=\"" + args[0] + "\">");
         	System.out.println("     <executionTimeMS>"+(System.currentTimeMillis()-startTime)+"</executionTimeMS>");
-        	System.out.println("     <exceptionThrown>"+e.getMessage()+"</exceptionThrown>");
+           	System.out.println("     <exceptionThrown>");
+           	System.out.println("          <message>"+e.getMessage()+"</message>");
+           	System.out.println("          <stackTrace>");
+        	e.printStackTrace();
+           	System.out.println("          </stackTrace>");
+        	System.out.println("     </exceptionThrown>");
         	System.out.println("</preflight>");
         }
 
