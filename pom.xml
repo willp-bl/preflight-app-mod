@@ -96,7 +96,7 @@
             <Embed-Dependency>*;scope=provided;inline=org/apache/**|org/bouncycastle/**|com/ibm/icu/**|javax/activation/**|com/sun/activation/**</Embed-Dependency>
             <Bundle-DocURL>${project.url}</Bundle-DocURL>
             <Import-Package>!junit.framework,!junit.textui,javax.*;resolution:=optional,org.apache.avalon.framework.logger;resolution:=optional,org.apache.log;resolution:=optional,org.apache.log4j;resolution:=optional,*</Import-Package>
-            <Main-Class>org.apache.pdfbox.preflight.Validator_A1b</Main-Class>
+            <Main-Class>org.apache.pdfbox.preflight.Validator_A1b_XML</Main-Class>
           </instructions>
         </configuration>
       </plugin>

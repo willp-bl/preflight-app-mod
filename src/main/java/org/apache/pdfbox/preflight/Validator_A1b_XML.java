@@ -45,7 +45,7 @@ import org.apache.pdfbox.preflight.parser.PreflightParser;
  * @author gbailleul
  * 
  */
-public class Validator_A1b
+public class Validator_A1b_XML
 {
 
     public static void main(String[] args) 
@@ -93,6 +93,10 @@ public class Validator_A1b
         	System.out.println("</preflight>");
         }
 
+        if(result==null) {
+            System.exit(-1);        	
+        }
+        
         if (result.isValid())
         {
             System.out.println("<preflight name=\"" + args[0] + "\">");
