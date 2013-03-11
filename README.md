@@ -4,5 +4,6 @@ preflight-app-mod
 Modified output class for Apache Preflight
 
 Clone pdfbox from git://git.apache.org/pdfbox.git
+Install it into your local maven repository
 
-Drop in Validator_A1b.java into the right place under preflight/
+"mvn package" should build a jar with dependencies
