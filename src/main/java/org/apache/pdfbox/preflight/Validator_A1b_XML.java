@@ -84,10 +84,11 @@ public class Validator_A1b_XML
         {
         	System.out.println("<preflight name=\"" + args[0] + "\">");
         	System.out.println("     <executionTimeMS>"+(System.currentTimeMillis()-startTime)+"</executionTimeMS>");
+            System.out.println("     <isValid type=\""+pdfType+"\">false</isValid>");
            	System.out.println("     <exceptionThrown>");
            	System.out.println("          <message>"+e.getMessage()+"</message>");
            	System.out.println("          <stackTrace>");
-        	e.printStackTrace();
+        	e.printStackTrace(System.out);
            	System.out.println("          </stackTrace>");
         	System.out.println("     </exceptionThrown>");
         	System.out.println("</preflight>");
