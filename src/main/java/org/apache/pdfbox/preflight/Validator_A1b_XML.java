@@ -82,6 +82,7 @@ public class Validator_A1b_XML
         } 
         catch(Exception e) 
         {
+    		System.out.println("<?xml version=\"1.0\" ?>");
         	System.out.println("<preflight name=\"" + args[0] + "\">");
         	System.out.println("     <executionTimeMS>"+(System.currentTimeMillis()-startTime)+"</executionTimeMS>");
             System.out.println("     <isValid type=\""+pdfType+"\">false</isValid>");
@@ -100,6 +101,7 @@ public class Validator_A1b_XML
         
         if (result.isValid())
         {
+    		System.out.println("<?xml version=\"1.0\" ?>");
             System.out.println("<preflight name=\"" + args[0] + "\">");
             System.out.println("     <executionTimeMS>"+(System.currentTimeMillis()-startTime)+"</executionTimeMS>");
             System.out.println("     <isValid type=\""+pdfType+"\">true</isValid>");
@@ -132,6 +134,7 @@ public class Validator_A1b_XML
         		errors.remove(0);
             }
         	
+    		System.out.println("<?xml version=\"1.0\" ?>");
             System.out.println("<preflight name=\"" + args[0] + "\">");
             System.out.println("     <executionTimeMS>"+(System.currentTimeMillis()-startTime)+"</executionTimeMS>");
             System.out.println("     <isValid type=\""+pdfType+"\">false</isValid>");
